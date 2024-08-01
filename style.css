@@ -1,0 +1,173 @@
+body {
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  background-color: #f5efe6;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #1a4d2e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  height: 15vh;
+  color: #e8dfca;
+}
+.header-text {
+  flex: 1;
+  text-align: center;
+  font-size: 2rem;
+  color: #e8dfca;
+}
+
+.header-button {
+  height: 5vh;
+  width: 5vh;
+  border-radius: 50%;
+  background-color: #4f6f52;
+  color: #e8dfca;
+  border: none;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10vh;
+}
+
+.main {
+  margin-top: 16vh;
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.to-do {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #4f6f52;
+  background-color: #e8dfca;
+  border-radius: 10px;
+}
+.content {
+  flex: 1;
+  margin-left: 10px;
+  color: #1a4d2e;
+  font-size: 1rem;
+}
+.date {
+  position: absolute;
+  margin-top: 120px;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+.to-do-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #1a4d2e;
+  color: #e8dfca;
+  border: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+  height: 5vh;
+  background-color: #1a4d2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e8dfca;
+}
+
+footer h5 {
+  font-size: 1rem;
+  margin-right: 20px;
+}
+
+button:hover {
+  background-color: #4f6f52;
+}
+.header-button:hover {
+  background-color: bisque;
+}
+.to-do:hover {
+  box-shadow: 0px 4px 5px rgb(168, 168, 168, 0.38);
+}
+
+@media (min-width: 768px) {
+  .header-text {
+    font-size: 3rem;
+  }
+
+  .header-button {
+    height: 7vh;
+    width: 7vh;
+    font-size: 2rem;
+  }
+
+  .content {
+    font-size: 1.5rem;
+  }
+
+  .to-do-btn {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.25rem;
+  }
+
+  footer h5 {
+    font-size: 1.5rem;
+  }
+  .date {
+    position: absolute;
+    margin-top: 90px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-text {
+    font-size: 4rem;
+  }
+
+  .header-button {
+    height: 8vh;
+    width: 8vh;
+    font-size: 2.5rem;
+  }
+
+  .content {
+    font-size: 2rem;
+  }
+
+  .to-do-btn {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+
+  footer h5 {
+    font-size: 2rem;
+  }
+  .date {
+    position: absolute;
+    margin-top: 100px;
+  }
+}
